@@ -1,0 +1,31 @@
+
+
+### 클래스 구조
+
+
+#### 1. 책
+	a. 생성자 (제목, 저자, 책 갯수)
+	b. 대출
+	c. 반납
+	d. 정보 출력
+	e. getId() -> 책 id 리턴
+
+#### 2. 도서관
+	a. 책 등록 (create)
+	b. 책 제거 (delete)
+	c. 책 조회 (find)
+	d. 책 대출 (update)
+	e. 책 반납 (update)	
+
+#### 3. 사용자 UI
+	a. printMenu
+	b. menu 책 조회
+	c. menu 책 대출
+	d. menu 책 반납
+	e. menu 빌린 책 환인
+
+#### 4. 관리자 UI
+	a. printMenu
+	b. menu 책 조회
+	c. menu 책 등록
+	d. menu 책 제거

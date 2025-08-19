@@ -1,0 +1,104 @@
+name: "🐞 Bug report"
+description: "버그 신고 폼"
+title: "[BUG] 간단 요약을 적어주세요"
+labels: ["bug", "needs triage"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        감사합니다! 아래 항목을 채워주세요. (이미지/로그는 드래그&드롭으로 첨부 가능)
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: 기본 확인
+      options:
+        - label: 기존 이슈를 검색했습니다.
+          required: true
+        - label: 재현 가능한 최소 예제를 포함했습니다.
+          required: false
+
+  - type: input
+    id: summary
+    attributes:
+      label: 요약
+      placeholder: "예) 앱 시작 직후 크래시 발생"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: 심각도
+      options: ["blocker", "critical", "major", "minor", "trivial"]
+      default: 2
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: 영향 범위 (복수 선택 가능)
+      multiple: true
+      options:
+        - "📱 App / Frontend"
+        - "🧠 Core / Algorithm"
+        - "🔌 Embedded / Hardware"
+        - "🗄️ Backend / API"
+        - "🧪 Test / CI"
+        - "📚 Docs"
+
+  - type: textarea
+    id: env
+    attributes:
+      label: 환경
+      description: OS, 버전, 장치, 브랜치 등
+      placeholder: |
+        OS: Windows 10 / Ubuntu 22.04
+        Device: STM32G474RE
+        Branch: main@abcdef
+        Version: v1.2.3
+      render: markdown
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: 재현 절차
+      description: 가능한 한 구체적으로 작성하세요.
+      placeholder: |
+        1. ...
+        2. ...
+        3. ...
+      render: markdown
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: 기대 동작
+      placeholder: "예) 설정 저장 후 앱이 정상 재시작되어야 함"
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: 실제 동작 / 로그
+      description: 스택 트레이스나 콘솔 로그를 붙여주세요.
+      render: shell
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: 추가 메모 / 스크린샷
+      render: markdown
+
+  - type: checkboxes
+    id: coc
+    attributes:
+      label: 확인
+      options:
+        - label: 프로젝트의 Code of Conduct를 준수합니다.
+          required: true

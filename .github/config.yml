@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: "🙋 Q&A / Discussions"
+    url: https://github.com/<OWNER>/<REPO>/discussions
+    about: 질문은 Discussions로 올려주세요.
+  - name: "🔐 Security vulnerabilities"
+    url: https://github.com/<OWNER>/<REPO>/security/policy
+    about: 보안 이슈는 공개 이슈 대신 여기로 제보해주세요.

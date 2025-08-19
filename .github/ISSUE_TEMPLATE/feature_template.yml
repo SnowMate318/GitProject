@@ -4,32 +4,13 @@ title: "[FEAT] 간단 요약을 적어주세요"
 labels: ["enhancement", "needs triage"]
 assignees: []
 body:
-  - type: markdown
-    attributes:
-      value: "새 기능 아이디어를 제안해 주세요. 최대한 구체적으로 써주실수록 좋아요 🙂"
-
-  - type: input
-    id: summary
-    attributes:
-      label: 한 줄 요약
-      placeholder: "예) BLE 비콘 스캔 히트맵 추가"
-    validations:
-      required: true
-
   - type: textarea
     id: problem
     attributes:
-      label: 문제/배경
-      placeholder: "이 기능이 해결하려는 사용자 문제는 무엇인가요?"
+      label: 설명
+      placeholder: "어떤 기능인지 설명해주세요"
       render: markdown
     validations:
       required: true
 
-
-  - type: dropdown
-    id: impact
-    attributes:
-      label: 영향도
-      options: ["high", "medium", "low"]
-      default: 1
 

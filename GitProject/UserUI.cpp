@@ -1,6 +1,7 @@
 #include "UserUI.h"
 
 
+
 // 커서 이동용
 void UserUI::gotoxy(int x, int y) {
     COORD pos = { (SHORT)x, (SHORT)y };
@@ -34,7 +35,12 @@ void UserUI::printMenu(void)
 void UserUI::MenuFind(void)
 {
     system("cls");
-    cout << " 책찾기";
+    cout << "==책 찾기==";
+    cout << "찾을 책의 ID를 입력해주세요 : ";
+
+    cin >> ID;
+    lib.findBook(ID);
+
 }
 void UserUI::MenuRent(void) 
 {

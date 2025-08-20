@@ -2,6 +2,9 @@
 #define USERUI_H
 #include <iostream>
 #include <windows.h>
+#include <string.h>
+#include "LibraryClass.h"
+
 
 using namespace std;
 
@@ -14,6 +17,12 @@ public:
     void MenuRent(void);
     void MenuReturn(void);
     void Quit(void);
+
+    LibraryClass lib;
+
     int menu;
+    string title;
+    int ID;
+
 };
 #endif

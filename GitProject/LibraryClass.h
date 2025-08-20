@@ -1,5 +1,5 @@
 #pragma once
-class Book;
+#include "book.h"
 
 class LibraryClass
 {
@@ -9,4 +9,5 @@ public:
 	void findBook(int bookId);
 	void rentBook(int bookId);
 	void returnBook(int bookId);
+
 };

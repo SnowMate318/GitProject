@@ -4,22 +4,25 @@
 
 using namespace std;
 
+
 class Book {
 
-private:
+private :
 	string name;
 	string author;
 	int ID;
 	int num_of_book;
-
+	
 public:
 
-	//생성자
+	//»ý¼ºÀÚ
 	Book(string name, string author, int ID, int num_of_book);
 
 	void info_of_book();
-	bool loan_book();
+	/*void loan_book();
 	void return_book();
-	int get_id();
+	void find();
+	void print_book_info();
+	void get_id();*/
 
 };

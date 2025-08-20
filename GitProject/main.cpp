@@ -1,13 +1,19 @@
 #include "book.h"
 #include <iostream>
 #include "admin.h"
+
 #include "userUI.h"
 int main() {
 
 	int cmd = -1;
 
+	//b1.info_of_book();
+
+// 	Admin admin;
+// 	admin.printMenu();
+
 	while (cmd != 1 && cmd != 2) {
-		std::cout << "¸ðµå ¼±ÅÃ 1. »ç¿ëÀÚ    2. °ü¸®ÀÚ      " << std::endl;
+		std::cout << "ëª¨ë“œ ì„ íƒ 1. ì‚¬ìš©ìž    2. ê´€ë¦¬ìž      " << std::endl;
 		cin >> cmd;
 	}
 	if (cmd == 1) {
@@ -21,6 +27,6 @@ int main() {
 		Admin admin = Admin();
 		admin.printMenu();
 	}
-	//ÇÔ¼ö Ãß°¡
+	//í•¨ìˆ˜ ì¶”ê°€
 	return 0;
 }

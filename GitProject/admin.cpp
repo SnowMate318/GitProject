@@ -3,6 +3,9 @@
 //
 
 #include "Admin.h"
+#include "LibraryClass.h"
+
+LibraryClass lib;
 
 void Admin::printMenu(){
 	cout << "== 관리자 모드 ==\n\n";
@@ -15,6 +18,7 @@ void Admin::printMenu(){
 	switch (select) {
 	case 1:
 		// 책 조회
+		findBookFromAdmin();
 		break;
 	case 2:
 		// 책 등록
@@ -30,11 +34,16 @@ void Admin::printMenu(){
 }
 
 void Admin::findBookFromAdmin(){
+	int bookId;
 
+	cout << "조회할 책 아이디를 작성하세요: ";
+	cin >> bookId;
+
+	lib.findBook(bookId);
 }
 
 void Admin::addBookFromAdmin(){
-
+	
 }
 
 void Admin::removeBookFromAdmin(){

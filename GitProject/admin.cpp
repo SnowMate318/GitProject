@@ -2,20 +2,41 @@
 // Created by DSO8 on 25. 8. 20.
 //
 
-#include "admin.h"
+#include "Admin.h"
 
-void pirntMenu(){
+void Admin::printMenu(){
+	cout << "== 관리자 모드 ==\n\n";
+	cout << "메뉴를 선택하세요\n";
+	cout << "1. 책 조회하기 \n2. 책 등록하기 \n3. 책 삭제하기 \n\n";
+
+	int select;
+	cin >> select;
+
+	switch (select) {
+	case 1:
+		// 책 조회
+		break;
+	case 2:
+		// 책 등록
+		break;
+	case 3:
+		// 책 삭제
+		break;
+	default:
+		cout << "입력이 올바르지 않습니다\n";
+		break;
+	}
 
 }
 
-void findBookFromAdmin(){
+void Admin::findBookFromAdmin(){
 
 }
 
-void addBookFromAdmin(){
+void Admin::addBookFromAdmin(){
 
 }
 
-void removeBookFromAdmin(){
+void Admin::removeBookFromAdmin(){
 
 }

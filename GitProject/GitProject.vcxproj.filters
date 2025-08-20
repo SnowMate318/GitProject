@@ -15,23 +15,19 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="LibraryClass.cpp">
-    <ClCompile Include="info_of_book.cpp">
-    <ClCompile Include="UserUI.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
+    <ClCompile Include="LibraryClass.cpp" />
+    <ClCompile Include="info_of_book.cpp" />
+    <ClCompile Include="Admin.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="UserUI.cpp" />
+    <Filter>소스 파일</Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="LibraryClass.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="book.h">
-    <ClInclude Include="book.h">
-    <ClInclude Include="UserUI.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
+    <ClInclude Include="admin.h" />
+    <ClInclude Include="book.h" />
+    <ClInclude Include="LibraryClass.h" />
+    <ClCompile Include="info_of_book.h" />
+    <ClInclude Include="userUI.h" />
+    <Filter>헤더 파일</Filter>
   </ItemGroup>
 </Project>

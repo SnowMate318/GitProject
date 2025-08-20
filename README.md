@@ -44,7 +44,7 @@
 | 조성훈 |  https://github.com/kaeo007   | ako007@naver.com |
 | 이주연 |  https://github.com/zzu-yaaa  |  jy122032@gmail.com    |
 | 김재은 |  https://github.com/jesloth  |   kjekjh0220@gmail.com   |
-| 조재훈 | insta: b.hxxn                |    010-9558-6378         | 장난 전화 환영
+| 조재훈 | insta: b.hxxn                |    010-9558-6378         | 
 ---
-
+**장난 전화 환영**
 

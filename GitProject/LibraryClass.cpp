@@ -14,59 +14,50 @@ void LibraryClass::createBook(Book* book)
 
 void LibraryClass::findBook(int bookId)
 {	
-	// √•¿Ã µÓ∑œµ«æÓ ¿÷¥¬¡ˆ »Æ¿Œ
+	// Ï±ÖÏù¥ Îì±Î°ùÎêòÏñ¥ ÏûàÎäîÏßÄ ÌôïÏù∏
 	if (bookList[bookId] != nullptr) {
 		if (bookList[bookId]->loan_book()) {
-			cout << "√•¿Ã ¿÷Ω¿¥œ¥Ÿ. " << "¥Îø© ∞°¥…«’¥œ¥Ÿ." << endl;
+			cout << "Ï±ÖÏù¥ ÏûàÏäµÎãàÎã§. " << "ÎåÄÏó¨ Í∞ÄÎä•Ìï©ÎãàÎã§." << endl;
 		}
 		else {
-			cout << "√•¿Ã ¿÷Ω¿¥œ¥Ÿ. " << "«ˆ¿Á ¥Îø©¡ﬂ." << endl;
+			cout << "Ï±ÖÏù¥ ÏûàÏäµÎãàÎã§. " << "ÌòÑÏû¨ ÎåÄÏó¨Ï§ë." << endl;
 		}
 	}
 	else {
-		cout << "µÓ∑œµ» √•¿Ã æ∆¥’¥œ¥Ÿ. " << endl;
+		cout << "Îì±Î°ùÎêú Ï±ÖÏù¥ ÏïÑÎãôÎãàÎã§. " << endl;
 	}
 }
 
 void LibraryClass::rentBook(int bookId)
 {
-	// √•¿Ã µÓ∑œµ«æÓ ¿÷¥¬¡ˆ »Æ¿Œ
+	// Ï±ÖÏù¥ Îì±Î°ùÎêòÏñ¥ ÏûàÎäîÏßÄ ÌôïÏù∏
 	if (bookList[bookId] != nullptr) {
-		// √•¿« ¿Á∞Ì∞° ≥≤æ∆ ¿÷¥¬¡ˆ »Æ¿Œ
+		// Ï±ÖÏùò Ïû¨Í≥†Í∞Ä ÎÇ®ÏïÑ ÏûàÎäîÏßÄ ÌôïÏù∏
 		if (bookList[bookId]->loan_book()) {
-			// ≥≤æ∆ ¿÷¿∏∏È ∫Ù∑¡¡÷∞Ì
-			cout << "¥Îø© øœ∑·" << endl;
+			// ÎÇ®ÏïÑ ÏûàÏúºÎ©¥ ÎπåÎ†§Ï£ºÍ≥†
+			cout << "ÎåÄÏó¨ ÏôÑÎ£å" << endl;
 		}
 		else {
-			// æ¯¿∏∏È ∏¯∫Ù∑¡¡ÿ¥Ÿ¥¬ ∏ﬁΩ√¡ˆ∏¶ √‚∑¬«—¥Ÿ.
-			cout << "¥Îø© ∫“∞°. ¿Á∞Ì æ¯¿Ω." << endl;
+			// ÏóÜÏúºÎ©¥ Î™ªÎπåÎ†§Ï§ÄÎã§Îäî Î©îÏãúÏßÄÎ•º Ï∂úÎ†•ÌïúÎã§.
+			cout << "ÎåÄÏó¨ Î∂àÍ∞Ä. Ïû¨Í≥† ÏóÜÏùå." << endl;
 		}
 	}
 	else {
-		// µÓ∑œµ«æÓ ¿÷¡ˆ æ ¿∫ √•¿Ã∏È µÓ∑œ æ»µ  ∏ﬁΩ√¡ˆ √‚∑¬
-		cout << "µÓ∑œµ«æÓ ¿÷¡ˆ æ ¿∫ √•¿‘¥œ¥Ÿ." << endl;
+		// Îì±Î°ùÎêòÏñ¥ ÏûàÏßÄ ÏïäÏùÄ Ï±ÖÏù¥Î©¥ Îì±Î°ù ÏïàÎê® Î©îÏãúÏßÄ Ï∂úÎ†•
+		cout << "Îì±Î°ùÎêòÏñ¥ ÏûàÏßÄ ÏïäÏùÄ Ï±ÖÏûÖÎãàÎã§." << endl;
 	}
 }
-
-void LibraryClass::rentBook(int bookId)
-{
-}
-
 void LibraryClass::returnBook(int bookId)
 {
 }
 
 void LibraryClass::deleteBook(int bookId)
 {
-	// bookListø°º≠ bookIdø° «ÿ¥Á«œ¥¬ «◊∏Ò ªË¡¶ »ƒ 
+	// bookListÏóêÏÑú bookIdÏóê Ìï¥ÎãπÌïòÎäî Ìï≠Î™© ÏÇ≠Ï†ú ÌõÑ 
 	bookList.erase(bookId);
 
-	// øœ∑· ∏ﬁΩ√¡ˆ √‚∑¬
-	cout << "ªË¡¶µ«æ˙Ω¿¥œ¥Ÿ." << endl;
+	// ÏôÑÎ£å Î©îÏãúÏßÄ Ï∂úÎ†•
+	cout << "ÏÇ≠Ï†úÎêòÏóàÏäµÎãàÎã§." << endl;
 }
 
 
-//void LibraryClass::returnBook(int bookId)
-//{
-//
-//}

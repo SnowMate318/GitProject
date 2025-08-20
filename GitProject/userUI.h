@@ -3,7 +3,9 @@
 #include <iostream>
 #include <windows.h>
 #include <string.h>
+#include <map>
 #include "LibraryClass.h"
+#include "book.h"
 
 
 using namespace std;
@@ -16,13 +18,14 @@ public:
     void MenuFind(void);
     void MenuRent(void);
     void MenuReturn(void);
-    void Quit(void);
+    void RentList(void);
 
     LibraryClass lib;
 
     int menu;
     string title;
     int ID;
+    bool rent;
 
 };
 #endif

@@ -21,6 +21,7 @@ void Book::return_book()
 {
 }
 
+<<<<<<< HEAD
 void Book::find()
 {
 }
@@ -32,3 +33,9 @@ void Book::print_book_info()
 void Book::get_id()
 {
 }
+=======
+int Book::get_id(string name)
+{
+	return ID; 
+}
+>>>>>>> d9599cca0150e389ce5241a0fee4e45eee8cfc3d

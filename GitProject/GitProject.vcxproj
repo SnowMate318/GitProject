@@ -29,7 +29,7 @@
     <ClInclude Include="admin.h" />
     <ClInclude Include="book.h" />
     <ClInclude Include="LibraryClass.h" />
-    <ClInclude Include="UserUI.h" />
+    <ClInclude Include="userUI.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>

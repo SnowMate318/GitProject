@@ -2,8 +2,7 @@
 using namespace std;
 
 Book::Book(string name, string author, int ID, int num)
-	: name(name), author(author), ID(ID), num_of_book(num) {
-}
+	: name(name), author(author), ID(ID), num_of_book(num) {}
 
 
 void Book::info_of_book()
@@ -30,7 +29,8 @@ void Book::return_book()
 	num_of_book++;
 }
 
+
 int Book::get_id()
 {
-	return 0; // tmp
+	return ID; 
 }

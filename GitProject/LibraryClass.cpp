@@ -28,7 +28,7 @@ void LibraryClass::findBook(int bookId)
 	}
 }
 
-void LibraryClass::rentBook(int bookId)
+bool LibraryClass::rentBook(int bookId)
 {
 	// 책이 등록되어 있는지 확인
 	if (bookList[bookId] != nullptr) {
@@ -36,15 +36,18 @@ void LibraryClass::rentBook(int bookId)
 		if (bookList[bookId]->loan_book()) {
 			// 남아 있으면 빌려주고
 			cout << "대여 완료" << endl;
+			return true;
 		}
 		else {
 			// 없으면 못빌려준다는 메시지를 출력한다.
 			cout << "대여 불가. 재고 없음." << endl;
+			return false;
 		}
 	}
 	else {
 		// 등록되어 있지 않은 책이면 등록 안됨 메시지 출력
 		cout << "등록되어 있지 않은 책입니다." << endl;
+		return false;
 	}
 }
 void LibraryClass::returnBook(int bookId)

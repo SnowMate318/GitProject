@@ -41,7 +41,7 @@
 |--------|-------------------------------------------------------------|----------------------------|
 | 김태현 |  github.com/SnowMate318  |   xogus5070318@gmail.com   |
 | 김호준 |  github.com/hojjjoon  |   hojoonx123@naver.com   |
-| 조성훈 |    |      |
+| 조성훈 |  https://github.com/kaeo007   |  kaeo007@kau.kr |
 | 이주연 |  github.com/zzu-yaaa  |  jy122032@gmail.com    |
 | 김재은 |  github.com/jesloth  |   kjekjh0220@gmail.com   |
 ---

@@ -2,7 +2,8 @@
 using namespace std;
 
 Book::Book(string name, string author, int ID, int num)
-	: name(name), author(author), ID(ID), num_of_book(num) {}
+	: name(name), author(author), ID(ID), num_of_book(num) {
+}
 
 
 void Book::info_of_book()
@@ -13,22 +14,23 @@ void Book::info_of_book()
 		<< "남은 수량 : " << num_of_book << endl;
 }
 
-void Book::loan_book()
+bool Book::loan_book()
 {
+	if (num_of_book <= 0) {
+		return false;
+	}
+	else {
+		num_of_book--;
+		return true;
+	}
 }
 
 void Book::return_book()
 {
+	num_of_book++;
 }
 
-void Book::find()
+int Book::get_id()
 {
-}
-
-void Book::print_book_info()
-{
-}
-
-void Book::get_id()
-{
+	return 0; // tmp
 }

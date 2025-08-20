@@ -5,7 +5,10 @@
 #ifndef ADMIN_H
 #define ADMIN_H
 
-class admin {
+#include <iostream>
+using namespace std;
+
+class Admin {
 
 public:
     void printMenu();

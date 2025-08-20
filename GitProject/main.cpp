@@ -1,8 +1,10 @@
+#include "book.h"
 #include <iostream>
 
 int main() {
 
-	std::cout << "Hello World" << std::endl;
-	//함수 추가
+	//Book b1("aaa", "seonghun", 1111);
+
+	//b1.info_of_book();
 	return 0;
 }

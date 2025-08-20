@@ -26,17 +26,11 @@
     <ClCompile Include="UserUI.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="UserUI.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Admin.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="book.h" />
-  </ItemGroup>
-  <ItemGroup>
+    <ClInclude Include="admin.h" />
     <ClInclude Include="book.h" />
     <ClInclude Include="LibraryClass.h" />
+    <ClCompile Include="info_of_book.h" />
+    <ClInclude Include="userUI.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>

@@ -11,8 +11,8 @@ int main() {
 	Admin admin = Admin();
 
 	while (true) {
-		user.printMenu();
 		admin.printMenu();
+		user.printMenu();
 	}
 	
 	

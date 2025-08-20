@@ -14,19 +14,26 @@ void LibraryClass::createBook(Book* book)
 	bookRent[book->getId()] = false;
 }
 
+void LibraryClass::findBook(int bookId)
+{
+	if (bookList.find(bookId)) {
+		if (bookRent[bookId]) {
+			cout << "책이 있습니다. " << "대여 가능합니다." << endl;
+		}
+		else {
+			cout << "책이 있습니다. " << "현재 대여중." << endl;
+		}
+	}
+	else {
+		cout << "책이 없습니다. " << endl;
+	}
+}
 //void LibraryClass::deleteBook(int bookId)
 //{
 //
 //}
 //
-//void LibraryClass::findBook(int bookId)
-//{
-//	bool bookExists = bookList.find(bookId);
-//
-//	if (bookExists) {
-//		cout << "책이 있습니다. " << endl;
-//	}
-//}
+
 //void LibraryClass::rentBook(int bookId)
 //{
 //

@@ -21,6 +21,7 @@
   <ItemGroup>
     <ClCompile Include="LibraryClass.cpp" />
     <ClCompile Include="Admin.cpp" />
+    <ClCompile Include="book.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="UserUI.cpp" />
   </ItemGroup>

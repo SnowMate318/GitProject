@@ -30,7 +30,7 @@ void Book::return_book()
 	num_of_book++;
 }
 
-int Book::get_id()
+int Book::get_id(string name)
 {
-	return 0; // tmp
+	return ID; 
 }

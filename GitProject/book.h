@@ -20,6 +20,6 @@ public:
 	void info_of_book();
 	bool loan_book();
 	void return_book();
-	int get_id();
+	int get_id(string name);
 
 };

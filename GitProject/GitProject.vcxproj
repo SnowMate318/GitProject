@@ -20,7 +20,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="LibraryClass.cpp" />
-    <ClCompile Include="info_of_book.cpp" />
     <ClCompile Include="Admin.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="UserUI.cpp" />
@@ -29,7 +28,6 @@
     <ClInclude Include="admin.h" />
     <ClInclude Include="book.h" />
     <ClInclude Include="LibraryClass.h" />
-    <ClCompile Include="info_of_book.h" />
     <ClInclude Include="userUI.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

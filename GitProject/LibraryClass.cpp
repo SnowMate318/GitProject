@@ -49,6 +49,11 @@ void LibraryClass::rentBook(int bookId)
 }
 void LibraryClass::returnBook(int bookId)
 {
+	// bookId에 해당하는 도서 반납 수행
+	bookList[bookId]->return_book();
+
+	// 도서 반납 완료 메시지 출력
+	cout << "도서 반납 완료" << endl;
 }
 
 void LibraryClass::deleteBook(int bookId)

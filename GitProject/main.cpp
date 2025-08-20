@@ -1,10 +1,9 @@
-#include "book.h"
+﻿#include "book.h"
 #include <iostream>
 #include "admin.h"
 #include "userUI.h"
 
 int main() {
-
 	int cmd = -1;
 
 	//b1.info_of_book();

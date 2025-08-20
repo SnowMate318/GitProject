@@ -1,4 +1,4 @@
-//
+﻿//
 // Created by DSO8 on 25. 8. 20.
 //
 
@@ -16,7 +16,6 @@ public:
     void findBookFromAdmin();
     void addBookFromAdmin();
     void removeBookFromAdmin();
-
 };
 
 

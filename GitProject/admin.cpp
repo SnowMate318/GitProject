@@ -1,33 +1,38 @@
-//
+Ôªø//
 // Created by DSO8 on 25. 8. 20.
 //
 
 #include "Admin.h"
 #include "LibraryClass.h"
+#include "book.h"
 
 LibraryClass lib;
 
 void Admin::printMenu(){
-	cout << "== ∞¸∏Æ¿⁄ ∏µÂ ==\n\n";
-	cout << "∏ﬁ¥∫∏¶ º±≈√«œººø‰\n";
-	cout << "1. √• ¡∂»∏«œ±‚ \n2. √• µÓ∑œ«œ±‚ \n3. √• ªË¡¶«œ±‚ \n\n";
+	cout << "== Í¥ÄÎ¶¨Ïûê Î™®Îìú ==\n\n";
+	cout << "Î©îÎâ¥Î•º ÏÑ†ÌÉùÌïòÏÑ∏Ïöî\n";
+	cout << "1. Ï±Ö Ï°∞ÌöåÌïòÍ∏∞ \n2. Ï±Ö Îì±Î°ùÌïòÍ∏∞ \n3. Ï±Ö ÏÇ≠Ï†úÌïòÍ∏∞ \n4. ÎÇòÍ∞ÄÍ∏∞ \n\n";
 
 	int select;
 	cin >> select;
 
 	switch (select) {
 	case 1:
-		// √• ¡∂»∏
+		// Ï±Ö Ï°∞Ìöå
 		findBookFromAdmin();
 		break;
 	case 2:
-		// √• µÓ∑œ
+		// Ï±Ö Îì±Î°ù
+		addBookFromAdmin();
 		break;
 	case 3:
-		// √• ªË¡¶
+		// Ï±Ö ÏÇ≠Ï†ú
+		removeBookFromAdmin();
 		break;
+	case 4:
+		return;
 	default:
-		cout << "¿‘∑¬¿Ã ø√πŸ∏£¡ˆ æ Ω¿¥œ¥Ÿ\n";
+		cout << "ÏûÖÎ†•Ïù¥ Ïò¨Î∞îÎ•¥ÏßÄ ÏïäÏäµÎãàÎã§\n";
 		break;
 	}
 
@@ -36,16 +41,30 @@ void Admin::printMenu(){
 void Admin::findBookFromAdmin(){
 	int bookId;
 
-	cout << "¡∂»∏«“ √• æ∆¿Ãµ∏¶ ¿€º∫«œººø‰: ";
+	cout << "Ï°∞ÌöåÌï† Ï±Ö ÏïÑÏù¥ÎîîÎ•º ÏûëÏÑ±ÌïòÏÑ∏Ïöî: ";
 	cin >> bookId;
 
 	lib.findBook(bookId);
 }
 
 void Admin::addBookFromAdmin(){
+	string name, author;
+	int ID, num_of_book;
+
+	cout << "Îì±Î°ùÌï† Ï±Ö Ï†ïÎ≥¥Î•º ÏûëÏÑ±ÌïòÏÑ∏Ïöî\n(Ï†úÎ™©, Ï†ÄÏûê, ÏïÑÏù¥Îîî, Í∞úÏàò): ";
+	cin >> name >> author >> ID >> num_of_book;
+
+	Book* book = new Book(name, author, ID, num_of_book);
+	lib.createBook(book);
 	
 }
 
 void Admin::removeBookFromAdmin(){
+	int bookId;
+
+	cout << "ÏÇ≠Ï†úÌï† Ï±Ö ÏïÑÏù¥ÎîîÎ•º ÏûëÏÑ±ÌïòÏÑ∏Ïöî: ";
+	cin >> bookId;
+
+	lib.deleteBook(bookId);
 
 }

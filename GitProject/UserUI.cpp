@@ -35,7 +35,7 @@ void UserUI::printMenu(void)
 void UserUI::MenuFind(void)
 {
     system("cls");
-    cout << "==책 찾기==";
+    cout << "==책 찾기==\n";
     cout << "찾을 책의 ID를 입력해주세요 : ";
 
     cin >> ID;

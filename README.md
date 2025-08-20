@@ -39,7 +39,7 @@
 
 | 이름   | GitHub 주소                                                | 이메일 주소               |
 |--------|-------------------------------------------------------------|----------------------------|
-| 김태현 |  https://github.com/SnowMate318  |   xogus5070318@gmail.com   |
+| **김태현** |  https://github.com/SnowMate318  |   xogus5070318@gmail.com   |
 | 김호준 |  https://github.com/hojjjoon  |   hojoonx123@naver.com   |
 | 조성훈 |  https://github.com/kaeo007   |  kaeo007@kau.kr |
 | 이주연 |  https://github.com/zzu-yaaa  |  jy122032@gmail.com    |

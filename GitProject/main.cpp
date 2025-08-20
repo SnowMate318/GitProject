@@ -1,10 +1,10 @@
 #include "book.h"
 #include <iostream>
-
+#include "admin.h"
 int main() {
 
-	//Book b1("aaa", "seonghun", 1111);
-
-	//b1.info_of_book();
+	std::cout << "Hello World" << std::endl;
+	
+	//함수 추가
 	return 0;
 }

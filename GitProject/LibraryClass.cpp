@@ -1,4 +1,4 @@
-#include "LibraryClass.h"
+﻿#include "LibraryClass.h"
 #include <map>
 #include <string>
 #include <iostream>
@@ -13,7 +13,7 @@ void LibraryClass::createBook(Book* book)
 }
 
 void LibraryClass::findBook(int bookId)
-{	
+{
 	// 책이 등록되어 있는지 확인
 	if (bookList[bookId] != nullptr) {
 		if (bookList[bookId]->loan_book()) {

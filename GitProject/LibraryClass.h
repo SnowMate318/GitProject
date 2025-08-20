@@ -7,7 +7,7 @@ public:
 	void createBook(Book* book);
 	void deleteBook(int bookId);
 	void findBook(int bookId);
-	void rentBook(int bookId);
+	bool rentBook(int bookId);
 	void returnBook(int bookId);
 
 };

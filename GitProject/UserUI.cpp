@@ -16,7 +16,7 @@ void UserUI::printMenu(void)
         cout << " 1. 책 조회\n";
         cout << " 2. 책 대출\n";
         cout << " 3. 책 반납\n";
-        cout << " 4. 책 빌린 책 확인\n";
+        cout << " 4. 빌린 책 확인\n";
         cout << " 5. 종료\n";
 
         cout << "원하시는 메뉴를 선택해주세요 : ";
@@ -31,8 +31,10 @@ void UserUI::printMenu(void)
             break;
         case 3:
             MenuReturn();
+            break;
         case 4:
             RentList();
+            break;
         case 5:
             return;
         }

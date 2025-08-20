@@ -29,6 +29,14 @@ void LibraryClass::findBook(int bookId)
 	}
 }
 
+void LibraryClass::rentBook(int bookId)
+{
+}
+
+void LibraryClass::returnBook(int bookId)
+{
+}
+
 void LibraryClass::deleteBook(int bookId)
 {
 

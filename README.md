@@ -43,7 +43,7 @@
 | 김호준 |  github.com/hojjjoon  |   hojoonx123@naver.com   |
 | 조성훈 |    |      |
 | 이주연 |    |      |
-| 김재은 |    |      |
+| 김재은 |  github.com/jesloth  |   kjekjh0220@gmail.com   |
 ---
 
 

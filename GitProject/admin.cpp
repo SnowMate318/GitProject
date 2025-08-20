@@ -53,8 +53,19 @@ void Admin::addBookFromAdmin(){
 	string name, author;
 	int ID, num_of_book;
 
-	cout << "등록할 책 정보를 작성하세요\n(제목, 저자, 아이디, 개수): ";
-	cin >> name >> author >> ID >> num_of_book;
+	cout << "등록할 책 정보를 작성하세요\n";
+	cout << "제목: ";
+	cin.ignore();
+	getline(cin, name);
+
+	cout << "저자: ";
+	getline(cin, author);
+
+	cout << "아이디(숫자): ";
+	cin >> ID;
+
+	cout << "개수: ";
+	cin >> num_of_book;
 
 	Book* book = new Book(name, author, ID, num_of_book);
 	lib.createBook(book);

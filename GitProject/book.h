@@ -4,6 +4,7 @@
 
 using namespace std;
 
+
 class Book {
 
 private :
@@ -14,7 +15,7 @@ private :
 	
 public:
 
-	//»ý¼ºÀÚ
+	//Â»Ã½Â¼ÂºÃ€Ãš
 	Book(string name, string author, int ID, int num_of_book);
 
 	void info_of_book();

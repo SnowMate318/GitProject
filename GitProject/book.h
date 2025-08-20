@@ -19,7 +19,7 @@ public:
 	Book(string name, string author, int ID, int num_of_book);
 
 	void info_of_book();
-	void loan_book();
+	bool loan_book();
 	void return_book();
 
 	int get_id();

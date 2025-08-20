@@ -13,12 +13,20 @@ void Book::info_of_book()
 		<< "남은 수량 : " << num_of_book << endl;
 }
 
-void Book::loan_book()
+bool Book::loan_book()
 {
+	if (num_of_book <= 0) {
+		return false;
+	}
+	else {
+		num_of_book--;
+		return true;
+	}
 }
 
 void Book::return_book()
 {
+	num_of_book++;
 }
 
 

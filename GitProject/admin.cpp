@@ -18,6 +18,7 @@ void Admin::printMenu(){
 	switch (select) {
 	case 1:
 		// 책 조회
+		findBookFromAdmin();
 		break;
 	case 2:
 		// 책 등록
